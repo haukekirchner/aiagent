@@ -1,0 +1,50 @@
+services:
+  agent:
+    build: .
+    container_name: aiagent
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - API_KEY=${API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
+      - API_BASE_URL=${API_BASE_URL:-}
+      - MODEL=${MODEL:-qwen3-32b}
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    command: python -u agent.py
+
+  agent-multi:
+    build: .
+    container_name: aiagent-multi
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - API_KEY=${API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
+      - API_BASE_URL=${API_BASE_URL:-}
+      - MODEL=${MODEL:-qwen3-32b}
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    command: python -u agent_multi.py
+    profiles:
+      - multi
+
+  agent-tools:
+    build: .
+    container_name: aiagent-tools
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - API_KEY=${API_KEY:-}
+      - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
+      - API_BASE_URL=${API_BASE_URL:-}
+      - MODEL=${MODEL:-qwen3-32b}
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    command: python -u agent_tools.py
+    profiles:
+      - tools
+
