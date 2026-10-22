@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "df8056e3-decd-4bfc-9758-6bc4d3d1b052",
+  "name": "aiagent",
+  "policies": {
+    "provenance": "required",
+    "privacy": "required",
+    "docs": "required"
+  },
+  "rules_revision": "0d0e1a613ea5fbfac88333c007edd15b30c2cdaf",
+  "baseline": "43c313a2619b69ae3cd891cccd7654800e98dc21",
+  "instructions_digest": "8ad42c7dc376e09b46b0c6d050d587b56301700f806123619a18e113d352f11f",
+  "rules_digest": "68d278f2418d87c3c274dfb78ac7e2327bedabe533cbae2dcff0d60452ccc512"
+}

@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "docs/project.md": [
+      "**"
+    ]
+  },
+  "ignore": [
+    "docs/**"
+  ]
+}

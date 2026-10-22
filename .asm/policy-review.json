@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "files": {
+    "AGENTS.md": "bac61ad91192bff4038bf8afcabef0d81060838e66c1dfe7b362664ded8d65a2",
+    "CLAUDE.md": "918b1c90559355ef78f33fdf3562f2b021ef8bdfd8a5c8415e5decd44934de55"
+  },
+  "compatibility": "AGENTS.md: only ASM's generated sections change (asm:rules, asm:hub), written by asm project init: the pointer list of shared rules gains rules/counterparts.md (ASM-125, approved as shared policy by the user on 2026-10-22), and where the project was enrolled without committing, the enrollment itself (rule pointers, the ASM workflow note, CLAUDE.md importing AGENTS.md). No local convention changes. Claude Code, OpenCode and Codex all read AGENTS.md. No migration: the rule applies only where two apps share a marked mechanism.",
+  "decision": "user-approved-shared"
+}
