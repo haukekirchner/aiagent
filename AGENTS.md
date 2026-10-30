@@ -26,6 +26,8 @@ and the reasoning that makes a rule worth following lives in the rule.
   No secret is committed, and no change is pushed with a known high-severity problem in what it touches: a vulnerable dependency, a misconfigured Dockerfile, a broken shell script. ASM's hooks check…
 - **every service stands on its own** — `~/projects/ai-service-manager/rules/shared-services.md`
   A service is owned by exactly one project. Everything else is a consumer, and a consumer configures itself — it never deploys, backs up, or reconfigures what it uses.
+- **clean up temporary files and processes** — `~/projects/ai-service-manager/rules/temporary-files.md`
+  What a session or a script starts for itself — a temporary directory, a headless browser, a dev server, a test fixture — it removes or stops before it is done. Large or long-lived things (caches,…
 
 A project may differ from a rule where it can say why, in a comment next to the
 code that differs. An undeclared difference is a mistake; a declared one is a

@@ -1,9 +1,8 @@
 {
   "schema_version": 1,
   "files": {
-    "AGENTS.md": "bac61ad91192bff4038bf8afcabef0d81060838e66c1dfe7b362664ded8d65a2",
-    "CLAUDE.md": "918b1c90559355ef78f33fdf3562f2b021ef8bdfd8a5c8415e5decd44934de55"
+    "AGENTS.md": "0160bb07518cc59f53f881bc5183dc4ee8709cff7323f4d9c1f53a2a0a9675dd"
   },
-  "compatibility": "AGENTS.md: only ASM's generated sections change (asm:rules, asm:hub), written by asm project init: the pointer list of shared rules gains rules/counterparts.md (ASM-125, approved as shared policy by the user on 2026-10-22), and where the project was enrolled without committing, the enrollment itself (rule pointers, the ASM workflow note, CLAUDE.md importing AGENTS.md). No local convention changes. Claude Code, OpenCode and Codex all read AGENTS.md. No migration: the rule applies only where two apps share a marked mechanism.",
+  "compatibility": "AGENTS.md: only ASM's generated asm:rules section changes, written by asm project sync: the pointer list of shared rules gains rules/temporary-files.md (clean up temporary files and processes; requested by the user on 2026-10-30 as ASM policy for all projects under ~/projects). No local convention changes. Claude Code, OpenCode and Codex all read AGENTS.md. No migration: scripts and tests that leave temporary files or processes behind keep working; ASM's hourly sweep removes their leftovers after 24 hours, and the rule asks for the leak to be fixed at the source.",
   "decision": "user-approved-shared"
 }
